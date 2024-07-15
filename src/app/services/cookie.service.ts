@@ -15,7 +15,6 @@ export class CookieService {
   }
 
   public setCookie(name: string, value: string, days?: number): void {
-    debugger;
     let expires = '';
     if (days) {
       const date = new Date();

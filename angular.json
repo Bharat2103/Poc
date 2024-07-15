@@ -64,6 +64,11 @@
             }
           },
           "defaultConfiguration": "development"
+          // "options": {
+          //   "ssl": true,
+          //   "sslKey": "./ssl-cert/key.pem",
+          //   "sslCert": "./ssl-cert/cert.pem"
+          // }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -91,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

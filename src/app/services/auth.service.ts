@@ -19,7 +19,6 @@ export class AuthService {
   ) {}
 
   login(response: any): void {
-    debugger;
     try {
       if (!response || !response.authenticationToken || !response.refreshTokenExpiresOn || !response.refreshToken) {
         throw new Error("Invalid response object");

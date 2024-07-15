@@ -74,10 +74,16 @@ export class LoginComponent {
   constructor(private http: HttpClient, private authService: AuthService) {}
 
   login() {
-    this.http.post('https://172.16.2.212:1011/login', { email: this.email, Password: this.password })
+    const body = {
+      email: this.email,
+      Password: this.password
+    };
+  
+    this.http.post('http://172.16.2.212:1001/login', body)
       .subscribe((response: any) => {
         this.authService.login(response);
+      }, (error) => {
+        console.error('Login failed', error);
       });
-    this.authService.login(this.response)
   }
 }

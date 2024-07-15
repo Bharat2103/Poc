@@ -1,0 +1,18 @@
+[
+    {
+        "name": "North_Sea",
+        "IP_ADDRESS": "172.16.2.212",
+        "Active": "false",
+        "Type": "Plant",
+        "Is_Authenticated": "",
+        "PORT": "5696"
+    },
+    {
+        "name": "Paciifc_location",
+        "IP_ADDRESS": "172.16.2.212",
+        "Active": "true",
+        "Type": "High_Availability",
+        "Is_Authenticated": "",
+        "PORT": "1001"
+    }
+]
